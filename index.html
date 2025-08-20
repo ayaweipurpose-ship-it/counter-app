@@ -1,15 +1,82 @@
-<!DOCTYPE html>   
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>
-            people entered:
-        </h1>
-        <h2  id="count-el">0</h2>        
-        <button id="increment-btn", onclick="increment()">INCREMENT</button>
-        <br><button id="save-btn" style="background-color: green;" onclick="save()">save</button>
-        <p id="welcome-el"> .</p>
-    </body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #444;
+            color: #fff;
+            padding: 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+        #count-el {
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 0.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        #increment-btn {
+            background: #007bff;
+            color: #fff;
+        }
+        #save-btn {
+            background: #28a745;
+            color: #fff;
+        }
+        footer {
+            margin-top: 2rem;
+            background: #222;
+            color: #ddd;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>People Counter</h1>
+    </header>
+
+    <main>
+        <h2>People entered:</h2>
+        <h2 id="count-el">0</h2>        
+        
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        
+        <p id="welcome-el">.</p>
+    </main>
+
+    <footer>
+        Developed by <strong>Ayawei Purpose</strong>
+    </footer>
+
     <script src="script.js"></script>
-    
+</body>
+</html>
